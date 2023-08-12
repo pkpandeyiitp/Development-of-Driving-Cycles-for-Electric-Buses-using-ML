@@ -17,13 +17,9 @@ This methodology delineates the systematic approach undertaken to craft precise 
 # Data Collection:
 1000 km real-world data collection was undertaken from electric and CNG buses. VBOX sensors were employed to collect continuous vehicle positional and kinematic data at a high frequency (10 Hz). The collected data encompassed latitude, longitude, speed, acceleration, and other pertinent parameters. Data collection spanned weekdays from 9 AM to 8 PM, capturing diverse driving conditions.
 
-<img width="294" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/82645c2c-2076-49ad-943d-3ea26c4828bf">
-
 # Data Preprocessing & Analysis:
 Collected data underwent meticulous examination to detect and rectify anomalies such as speed spikes, negative speed data points, and signal loss. Trajectory data were then scrutinized to identify micro-trips, forming the foundation for driving cycle construction. VBOX Test Suite software was used to extract the data gathered by VBOX
 Sport for pre-processing and analysis.
-
-<img width="394" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/a57f32aa-ba4b-40d1-929b-ee8626edda46">
 
 # K-means Clustering (Machine Learning)
 The utilization of machine learning techniques ensured the driving cycle's adherence to real-world driving patterns and allowed for a less than 10% deviation from target statistics. The chosen driving cycle was selected by comparing the constructed driving cycles to target statistics derived from collected data. 
@@ -36,23 +32,17 @@ Driving characteristics, including average speed, acceleration, and deceleration
 
 A widely recognized machine learning algorithm (K-means Clustering) employed to group micro-trips based on driving characteristics, to segment data and identify distinct driving patterns. The algorithm iteratively assigned micro-trips to clusters, minimizing the sum of squared distances between data points and cluster centroids.
 
-Micro-trips have been divided into four separate clusters, each with its own distinct characteristics and representing various traffic conditions such as 
-(i) cluster representing rural roads with fairly unrestricted traffic flow and shorter idle periods, 
-(ii) cluster representing roads with completely unobstructed traffic and higher average speeds, 
-(iii) cluster representing urban roads with slower average speeds and extended idle times, and 
-(iv) cluster representing urban areas with frequent stop-and-go traffic, featuring the 16 lowest speeds and the longest idle time percentage.
+Micro-trips have been divided into four separate clusters, each with its own distinct characteristics and representing various traffic conditions
 
-<img width="257" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/c3670cb6-a87a-4f79-adc2-f13d55bc636e">
+<img width="200" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/c3670cb6-a87a-4f79-adc2-f13d55bc636e">
 
-<img width="399" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/227646de-9f97-4c40-a4ff-48b57e2e2b1d">
+<img width="300" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/227646de-9f97-4c40-a4ff-48b57e2e2b1d">
 
-<img width="469" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/60ddeda0-e901-4ac1-8f75-e9266140133e">
+<img width="500" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/60ddeda0-e901-4ac1-8f75-e9266140133e">
 
 **Optimal Cluster Selection:**
 
 The Elbow Method was employed to identify the optimal number of clusters, ensuring meaningful grouping of micro-trips.
-
-<img width="452" alt="image" src="https://github.com/pkpandeyiitp/Driving-Cycle-Development/assets/123129440/1b22b760-065a-4294-a7c2-f5a0aa186399">
 
 **Cluster-Centric Candidate Cycle:** 
 
