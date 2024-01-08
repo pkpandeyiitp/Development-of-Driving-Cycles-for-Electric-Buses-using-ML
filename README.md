@@ -1,5 +1,5 @@
 # 1. Overview
-Welcome to the README for the project titled "Development of Driving Cycles for Electric Buses in Patna, India." 
+Welcome to the project titled "Development of Driving Cycles for Electric Buses using ML in Patna, India." 
 
 A driving cycle (DC) is often characterised as a time series of speed of a vehicle, where extra directives and conditions may be used. 
 It is a vital concept in analysing the speed pattern of automobile vehicles and also plays a a crucial role in the creation of new vehicles as well as in the assessment of vehicle attributes like emissions and energy consumption, optimizing powertrain design, energy storage management, and overall operational efficiency (evaluating the economic and environmental feasibility) of electric bus deployment.
