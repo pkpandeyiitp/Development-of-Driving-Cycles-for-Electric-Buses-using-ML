@@ -14,14 +14,14 @@ The primary goal of this project is to construct driving cycles that represent r
 # 3. Methodology
 This methodology delineates the systematic approach undertaken to craft precise driving cycles utilizing machine learning techniques, including clustering algorithms.
 
-# Data Collection:
+## Data Collection:
 1000 km real-world data collection was undertaken from electric and CNG buses. VBOX sensors were employed to collect continuous vehicle positional and kinematic data at a high frequency (10 Hz). The collected data encompassed latitude, longitude, speed, acceleration, and other pertinent parameters. Data collection spanned weekdays from 9 AM to 8 PM, capturing diverse driving conditions.
 
-# Data Preprocessing & Analysis:
+## Data Preprocessing & Analysis:
 Collected data underwent meticulous examination to detect and rectify anomalies such as speed spikes, negative speed data points, and signal loss. Trajectory data were then scrutinized to identify micro-trips, forming the foundation for driving cycle construction. VBOX Test Suite software was used to extract the data gathered by VBOX
 Sport for pre-processing and analysis.
 
-# K-means Clustering (Machine Learning)
+## K-means Clustering (Machine Learning)
 The utilization of machine learning techniques ensured the driving cycle's adherence to real-world driving patterns and allowed for a less than 10% deviation from target statistics. The chosen driving cycle was selected by comparing the constructed driving cycles to target statistics derived from collected data. 
 
 **Data Scaling:**
